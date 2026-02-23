@@ -1,41 +1,34 @@
-# Finance Python Models
+# Financial Analytics Toolkit
 
-This repository contains Python-based financial calculators built using Jupyter notebooks.  
-These projects focus on calculating the Present Value (PV) and Future Value (FV) of various types of cash flows, including annuities and perpetuities.
+A collection of Python-based financial modeling notebooks covering portfolio return estimation, discounted cash flow models, bond valuation, and time-value-of-money analytics.
 
----
-
-## Contents
-
-### 1. **PV_Coupon_Calculator.ipynb**
-- Calculates the Present Value of coupon bonds based on:
-  - Coupon rate
-  - Time to maturity
-  - Annual yield
-  - Par value
-  - Payment frequency
-- Includes calculation of Macaulay Duration.
-
-### 2. **PV_FV_Calculator.ipynb**
-- Provides functions to calculate:
-  - Ordinary annuities
-  - Growing annuities
-  - Growing perpetuities
-  - Lump-sum present and future values
-- Allows user input for custom financial scenarios.
+These tools were developed to support investment modeling workflows and demonstrate applied financial computation using reproducible Jupyter notebooks.
 
 ---
 
-## Technologies Used
-- **Python 3.x**
-- **Jupyter Notebook**
-- Libraries:
-  - NumPy
-  - Math (built-in Python)
+## Included Models
+
+* Portfolio Returns Engine (MVP prototype)
+* Discounted Dividend Model (DDM)
+* Coupon Bond Present Value Calculator
+* Time Value of Money Calculator (PV / FV / annuities / perpetuities)
 
 ---
 
-## Getting Started
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/jringler30/finance-python-models.git
+## Tech Stack
+
+Python
+Jupyter Notebook
+NumPy
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/jringler30/financial-analytics-toolkit.git
+```
+
+Open the notebooks in Jupyter or Google Colab and run the cells.
+
+---
