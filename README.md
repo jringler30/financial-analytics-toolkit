@@ -8,18 +8,19 @@ These tools were developed to support investment modeling workflows and demonstr
 
 ## Included Models
 
-* Portfolio Returns Engine (MVP prototype)
-* Discounted Dividend Model (DDM)
-* Coupon Bond Present Value Calculator
-* Time Value of Money Calculator (PV / FV / annuities / perpetuities)
+- Portfolio Returns Engine (MVP prototype)
+- Discounted Dividend Model (DDM)
+- Coupon Bond Present Value Calculator
+- Time Value of Money Calculator (PV / FV / annuities / perpetuities)
 
 ---
 
 ## Tech Stack
 
-Python
-Jupyter Notebook
-NumPy
+- Python
+- Jupyter Notebook
+- NumPy / Pandas
+- Matplotlib / Plotly
 
 ---
 
@@ -27,8 +28,25 @@ NumPy
 
 ```bash
 git clone https://github.com/jringler30/financial-analytics-toolkit.git
+cd financial-analytics-toolkit
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook
 ```
 
-Open the notebooks in Jupyter or Google Colab and run the cells.
+Then open and run notebooks from the `notebooks/` directory.
 
 ---
+
+## Notebook Notes
+
+- `notebooks/DDM.ipynb` uses `yfinance` and requires internet access for market-price lookups.
+- `notebooks/portfolio_returns_engine_MVP.ipynb` expects portfolio price data in a CSV/Parquet source and includes example inline assertions.
+- `notebooks/PV_FV_Calculator.ipynb` and `notebooks/PV_Coupon_Calculator.ipynb` are interactive calculators that prompt for input values.
+
+---
+
+## Audit
+
+An April 8, 2026 repository audit and remediation summary is available at `AUDIT_REPORT.md`.
