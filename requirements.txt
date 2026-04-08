@@ -4,3 +4,6 @@ numpy
 plotly
 gdown
 pyarrow
+matplotlib
+yfinance
+jupyter
